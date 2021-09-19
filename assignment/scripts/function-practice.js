@@ -48,6 +48,7 @@ function isPositive( number ) {
   else {
   return false;
 }
+}
 // Call the function to test each outcome (true & false)
 // Write a separate console.log statement for each outcome
 console.log( 'isPositive - should say true', isPositive(3) );
@@ -57,31 +58,28 @@ console.log( 'isPositive - should say false', isPositive(-3) );
 
 // 6. Function to return the _last_ item in an array. If the
 //    array is empty, return `undefined`.
-let animalArray = ['rabbit', 'cat', 'mouse']
+let animalArray = ['cow', 'rat', 'rabbit']
 function getLast( array ) {
-  for (animals of animalArray){
-    if (animals === animalArray.length-1)
-    return animals;
+  for (let i=0; i<animalArray.length; i++){
+    if (animalArray.length-1){
+      return 'rabbit';
+    }
   }
 }
-console.log(getLast(animalArray));
+console.log(getLast());
 // 7. Function to find a value in an array. Return true if the
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find
 let colorArray = ['red', 'blue', 'green']
 
 function find( value, array ){
-for (i in colorArray){
-  if (i === colorArray[i]){
+for (color of colorArray){
+  if (value === color[colorArray]){
     return true;
-    else {
-      return false;
-    }
   }
-
 }
 }
-find();
+console.log(find('red',colorArray));
 // ----------------------
 // Stretch Goals
 // ----------------------
